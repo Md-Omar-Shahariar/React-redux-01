@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./componenets/Counter";
+
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import HooksCounter from "./componenets/HooksCounter";
+import DynamicHooksCounter from "./componenets/DynamicHooksCounter";
 
 function App() {
   return (
@@ -12,9 +14,9 @@ function App() {
           Simple Counter Application
         </h1>
 
-        <Counter></Counter>
-        <Counter></Counter>
-        <Counter></Counter>
+        <HooksCounter></HooksCounter>
+        {/* <HooksCounter></HooksCounter> */}
+        <DynamicHooksCounter></DynamicHooksCounter>
       </div>
     </Provider>
   );
